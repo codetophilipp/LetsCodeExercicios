@@ -34,7 +34,16 @@ let listaCompras = [
 ];
 
 let itemParaProcurar = prompt("Digite o nome do item que deseja procurar");
-
 let item = listaCompras.find(item => item.nome === itemParaProcurar);
+let novaLista = [];
+let totalItens = 0;
 
-console.log(item);
+for(item of listaCompras){
+    if(item.nome == itemParaProcurar){
+        novaLista.push(item);
+        totalItens++;
+    }
+}
+
+console.log(`Quantidade deste item na lista = ${totalItens}`);
+console.log(novaLista);
