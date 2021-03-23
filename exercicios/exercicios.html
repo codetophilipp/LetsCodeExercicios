@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Arrays</h2>
+    <p>selecione o critério:</p>
+
+    <button onclick="ordenarPorAlfabeto()">Ordenar Alfabeticamente</button>
+    <button onclick="ordemCrescente()">Ordem Crescente</button>
+    <button onclick="ordemDecrescente()">Ordem Decrescente</button>
+    <button onclick="acharMaiorNum()">Achar o maior número</button>
+    <button onclick="acharMenorNum()">Achar o menor número</button>
+
+    <p id="array"></p>
+
+    <script>
+      var numerosArrayEx = [40, 100, 1, 5, 25, 10];
+      document.getElementById("array").innerHTML = numerosArrayEx;
+
+      function ordenarPorAlfabeto() {
+        numerosArrayEx.sort();
+        document.getElementById("array").innerHTML = numerosArrayEx;
+      }
+
+      function ordemCrescente() {
+        numerosArrayEx.sort(function (a, b) {
+          return a - b;
+        });
+        document.getElementById("array").innerHTML = numerosArrayEx;
+      }
+
+      function ordemDecrescente() {
+        numerosArrayEx.sort(function (a, b) {
+          return b - a;
+        });
+        document.getElementById("array").innerHTML = numerosArrayEx;
+      }
+
+      function acharMaiorNum() {
+        numerosArrayEx.sort(function (a, b) {
+          return a - b;
+        });
+        document.getElementById("array").innerHTML =
+          numerosArrayEx[numerosArrayEx.length - 1];
+      }
+
+      function acharMenorNum() {
+        numerosArrayEx.sort(function (a, b) {
+          return a - b;
+        });
+        document.getElementById("array").innerHTML = numerosArrayEx[0];
+      }
+    </script>
+  </body>
+</html>
