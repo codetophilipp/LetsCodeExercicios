@@ -21,12 +21,20 @@
         Ordenar
       </button>
       <button type="button" id="limpa" onclick="limparLista()">Limpar</button>
+      <button type="button" id="imprimeLista" onclick="imprimirLista()">
+        Imprimir lista
+      </button>
+    </br>
+    </br>
+      <label for="deletaItem">Digite o item para ser deletado da lista: </label>
+      <input type="text" id="deletaItem">
+      <button type="button" id="deleta" onclick="deletarItem(deletaItem.value)">Deletar</button>
     </form>
 
     <div class="lista">
       <ul id="listaCompras"></ul>
     </div>
 
-    <script type="text/javascript" src="ex31.js"></script>
+    <script type="text/javascript" src="ex30.js"></script>
   </body>
 </html>

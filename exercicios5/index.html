@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="form-field">
+      <label for="idade">Digite a idade: </label>
+      <input type="number" id="idade" />
+    </div>
+    <div class="form-field">
+      <label for="peso">Digite seu peso: </label>
+      <input type="number" id="peso" />
+    </div>
+    <div class="form-field">
+      <label for="sexo">Selecione o sexo: </label>
+      <select id="sexo">
+        <option value="M">Masculino</option>
+        <option value="F">Feminino</option>
+      </select>
+      <button
+        type="button"
+        onclick="adicionaPessoas(idade.value, peso.value, sexo.value)"
+      >
+        Adicionar
+      </button>
+    </div>
+    <div>
+      <h4 id="mediaIdadeHomens"></h4>
+      <h4 id="totalHomens"></h4>
+      <h4 id="mediaIdadeMulheres"></h4>
+      <h4 id="totalMulheres"></h4>
+      <h4 id="mediaPesoHomens"></h4>
+      <h4 id="mediaPesoMulheres"></h4>
+      <ul id="listaPessoas"></ul>
+    </div>
+    <script src="js.js"></script>
+  </body>
+</html>
