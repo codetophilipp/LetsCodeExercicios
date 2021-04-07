@@ -1,0 +1,23 @@
+/* :root {
+  --cor-padrao-nav: rgba(55, 55, 55, 0.75);
+  --cor-padrao-nav-hover: #373737;
+  --cor-padrao-neutro: white;
+  --cor-padrao-escuro: #000000;
+  --cor-padrao-cinza-clsaro: #dddddd;
+  --cor-padrao-cinza-claro-2: #ededed;
+  --cor-box-shadow-padrao: rgba(0, 0, 0, 0.2);
+  --cor-aviso-perigo: #ad112f;
+  --cor-padrao-background-input: #fcfcfc;
+} */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h3 {
+  font-size: 24px;
+}

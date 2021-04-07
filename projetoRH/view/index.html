@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="nav-bar.css" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="../script/script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <!-- navegação -->
+      <nav class="nav-bar">
+        <h3>Recursos Humanos</h3>
+        <label for="filtroBusca"
+          >Busca por:
+          <select name="" id="filtroBusca">
+            <option value="id">Id</option>
+            <option value="nome">Nome</option>
+            <option value="cargo">Cargo</option>
+          </select>
+        </label>
+        <form action="">
+          <input
+            type="text"
+            id="inputBusca"
+            class="input-busca"
+            placeholder="procurar ..."
+          />
+        </form>
+      </nav>
+    </header>
+
+    <main>
+      <!-- add colaboradores  -->
+      <div class="form">
+        <h3>Cadastro de colaboradores</h3>
+        <form class="form-cadastro" action="">
+          <div class="form-field">
+            <label for="nomeColaborador">Nome do colaborador:</label>
+            <input
+              id="nomeColaborador"
+              type="text"
+              placeholder="Digite o nome"
+            />
+          </div>
+          <div class="form-field">
+            <label for="idadeColaborador">Idade do colaborador:</label>
+            <input
+              id="idadeColaborador"
+              type="number"
+              placeholder="Digite a idade"
+            />
+          </div>
+          <div class="form-field">
+            <label for="cargoColaborador">Cargo do colaborador:</label>
+            <input
+              id="cargoColaborador"
+              type="text"
+              placeholder="Digite o cargo"
+            />
+          </div>
+          <div class="form-field">
+            <label for="salarioColaborador">Salário do colaborador:</label>
+            <input
+              id="salarioColaborador"
+              type="number"
+              placeholder="Digite o salário"
+            />
+          </div>
+          <div class="form-field">
+            <label for="dataAdmissaoColaborador"
+              >Data de admissão do colaborador:</label
+            >
+            <input
+              id="dataAdmissaoColaborador"
+              type="date"
+              placeholder="Digite a data de admissão"
+            />
+          </div>
+          <button
+            type="button"
+            id="adiciona"
+            onclick="addColaborador(nomeColaborador.value
+          ,idadeColaborador.value
+          ,cargoColaborador.value
+          ,salarioColaborador.value
+          ,dataAdmissaoColaborador.value)"
+          >
+            Adicionar
+          </button>
+        </form>
+      </div>
+
+      <!-- exibeListaColaboradores -->
+      <h3>Colaboradores:</h3>
+      <table>
+        <tr>
+          <th>Id:</th>
+          <th>Nome:</th>
+          <th>Idade:</th>
+          <th>Cargo:</th>
+          <th>Salário:</th>
+          <th>Data de Admissão:</th>
+        </tr>
+      </table>
+      <div id="imprimeListaColaboradores"></div>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>
